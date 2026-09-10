@@ -23,8 +23,9 @@ jobs:
 
           echo "Source folder: $SOURCE_DIR"
 
-          rsync -av \
+                    rsync -av \
             --exclude='.git' \
+            --exclude='.github/workflows' \
             --exclude='Warp-Go-TV-main.1.5.70.legacy.zip' \
             "$SOURCE_DIR/" ./
 
