@@ -8,11 +8,11 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.iknalos.warpgo.tv"
+        applicationId = "com.iknalos.warpgo.tv.legacy"
         minSdk = 24
         targetSdk = 35
-        versionCode = 22
-        versionName = "1.5.7-api25-desugar-fix"
+        versionCode = 1
+        versionName = "1.0.0-legacy"
 
         // Optional pre-registered WARP account injected from CI secrets.
         buildConfigField("String", "WARP_PRIVATE_KEY", "\"${System.getenv("WARP_PRIVATE_KEY") ?: ""}\"")
