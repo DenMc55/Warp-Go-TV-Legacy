@@ -605,9 +605,9 @@ class MainActivity : AppCompatActivity() {
         if (isLegacyFireOs()) {
             val up = try { WarpManager.isUp(this) } catch (_: Throwable) { false }
             val fill = when {
-                hasFocus -> Color.rgb(255, 213, 74)       // yellow while highlighted
-                up -> Color.rgb(35, 180, 90)              // green while connected
-                else -> Color.rgb(215, 45, 55)            // red while disconnected
+                hasFocus -> Color.rgb(214, 163, 0)        // deeper yellow while highlighted
+                up -> Color.rgb(27, 127, 58)               // deeper green while connected
+                else -> Color.rgb(179, 38, 30)             // deeper red while disconnected
             }
             val drawable = GradientDrawable().apply {
                 shape = GradientDrawable.RECTANGLE
