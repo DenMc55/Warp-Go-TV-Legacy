@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.WarpGo" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/warp_orange</item>
+        <item name="colorPrimaryContainer">@color/warp_orange</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/tv_navy</item>
+        <item name="android:navigationBarColor">@color/tv_navy</item>
+        <item name="android:fontFamily">sans</item>
+        <!-- Force AppCompat's inflater instead of MaterialComponentsViewInflater.
+             Fire OS 6 / Android 7.1 has a framework resource-parser bug that
+             crashes while MaterialTextView/MaterialButton are being inflated. -->
+        <item name="viewInflaterClass">androidx.appcompat.app.AppCompatViewInflater</item>
+    </style>
+</resources>
